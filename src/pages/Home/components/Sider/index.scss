@@ -1,0 +1,56 @@
+@import '../../../../style/var.scss';
+
+.wyy-sider {
+  width: $width;
+  max-width: $maxWidth;
+  border-right: 1px solid $border-light-color;
+  padding: $spacing * 8 $spacing * 16;
+
+  &-block {
+    &-title {
+      display: flex;
+      align-items: center;
+      color: $secondary-text-light-color;
+      font-size: $font-size-2;
+      height: 32px;
+      cursor: pointer;
+
+      span:nth-of-type(2) {
+        font-size: 13px;
+        margin-left: $spacing * 4;
+        flex-grow: 1;
+        margin-top: $spacing;
+      }
+
+      span:nth-of-type(3) {
+        font-size: $font-size-3;
+        color: $primary-text-light-color;
+      }
+    }
+
+    &-list {
+      &-item {
+        padding: $spacing * 4;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: $border-radius;
+
+        span {
+          font-size: 16px;
+        }
+        span:last-of-type {
+          font-size: 14px;
+          margin-left: $spacing * 4;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      &-item:hover {
+        background-color: $background-light-color;
+      }
+    }
+  }
+}

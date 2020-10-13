@@ -3,14 +3,15 @@ import { StoreContext } from '../../../../store/provider'
 
 export default function ThemeSkins () {
   const [themeList, setThemeList] = useState(new Array(0))
-  const [currentTheme, setCurrentTheme] = useState(1)
   const store = useContext(StoreContext) as any
 
   function toggleSkin (skin: object, index: number): void {
-    setCurrentTheme(index)
     store.dispatch({
       type: 'skin',
-      value: skin
+      value: {
+        current: index,
+        colors: skin
+      }
     })
   }
 
@@ -79,7 +80,7 @@ export default function ThemeSkins () {
           onClick={() => toggleSkin(el, index)}>
           <span className="iconfont icon-wangyiyunyinle wyy-skins-themes-option-icon"></span>
           <div className="wyy-skins-themes-option-label">{el.name}</div>
-          {(index === currentTheme) && <div className="wyy-skins-themes-option-selected">
+          {(index === store.state.app.skin.current) && <div className="wyy-skins-themes-option-selected">
             <span className="iconfont icon-check-circle-fill"></span>
           </div>}
         </div>)}

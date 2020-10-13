@@ -1,0 +1,73 @@
+@import '../../style/var.scss';
+
+.wyy-player-wrapper {
+  height: 72px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding-right: $spacing * 16;
+
+  span {
+    cursor: pointer;
+  }
+
+  .wyy-player-btns {
+    width: $width;
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    span {
+      font-size: $font-size-8;
+      margin: 0 $spacing * 8;
+      cursor: pointer;
+    }
+
+    span:nth-of-type(2) {
+      font-size: $font-size-10 + 8px;
+    }
+  }
+
+  .wyy-player-progress {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    &-track {
+      flex-grow: 1;
+      height: 8px;
+      border-radius: 8px;
+      background-color: $border-light-color;
+      position: relative;
+    }
+    
+    &-bar {
+      width: 30%;
+      height: inherit;
+      border-radius: inherit;
+    }
+
+    &-ball {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: white;
+      transform: translate(-7px, -50%);
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.45);
+    }
+
+    &-time {
+      margin: 0 $spacing * 8;
+    }
+
+    span {
+      width: 20px;
+    }
+  }
+}

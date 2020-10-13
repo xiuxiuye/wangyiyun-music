@@ -22,6 +22,7 @@ $font-size-6: 28px;
 $font-size-7: 30px;
 $font-size-8: 32px;
 $font-size-9: 34px;
+$font-size-10: 40px;
 
 /* 中心色 */
 /* 浅色背景 */
@@ -40,7 +41,8 @@ $blue-color: rgba(0, 160, 231, 1);
 $spacing: 2px;
 
 /* 左侧栏占据的宽度 */
-$width: 20%;
+$width: 240px;
+$maxWidth: 400px;
 
 /* 圆角 */
 $border-radius: 4px;

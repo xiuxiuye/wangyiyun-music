@@ -6,7 +6,7 @@
   align-items: center;
   &-logo {
     width: $width;
-    max-width: 400px;
+    max-width: $maxWidth;
     padding: 0 $spacing * 16;
     &-icon {
       font-size: $font-size-5;
