@@ -25,9 +25,9 @@ function Header () {
   !isFocus && isDataReady !== 0 && setIsDataReady(0)
 
   return (
-    <div className="wyy-header" style={{ backgroundColor: store.state.app.skin.colors.primaryColor }}>
+    <div className="wyy-header" style={{ backgroundColor: store.state.skin.colors.primaryColor, borderBottomColor: store.state.skin.colors.balanceColor }}>
       <div className="wyy-header-logo">
-        <span className="iconfont icon-wangyiyunyinle wyy-header-logo-icon" style={{ color: store.state.app.skin.colors.primaryColor }}></span>
+        <span className="iconfont icon-wangyiyunyinle wyy-header-logo-icon" style={{ color: store.state.skin.colors.primaryColor }}></span>
         <span className="wyy-header-logo-text">网易云音乐</span>
       </div>
       <div className="wyy-header-tools">

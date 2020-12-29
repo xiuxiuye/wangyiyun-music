@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import RouterView from '../../router/index'
 import Sider from './components/Sider/index'
+import { StoreContext } from '../../store/provider'
 import './index.scss'
 
-function Home () {
+interface HomeProps {
+  routes?: Array<any>
+}
+
+function Home (props: HomeProps) {
+  const store = useContext(StoreContext) as any
   return (
-    <div className="wyy-home wyy-app-page">
+    <div className="wyy-home wyy-app-page" style={{ backgroundColor: store.state.skin.colors.contentBGColor }}>
       <Sider />
-      <RouterView deep={1} />
+      <RouterView routes={props.routes} />
     </div>
   )
 }

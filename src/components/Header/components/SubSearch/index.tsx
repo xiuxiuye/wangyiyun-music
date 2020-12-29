@@ -4,8 +4,8 @@ import SearchHot from '../SearchHot/index'
 import './index.scss'
 
 interface SubSearchProps {
-  styles: object,
-  setIsInSubSearch: Function
+  styles: object;
+  setIsInSubSearch: Function;
 }
 
 function SubSearch ({ styles, setIsInSubSearch }: SubSearchProps) {

@@ -3,8 +3,8 @@ import { HeaderContext } from '../../index'
 import './index.scss'
 
 interface HistoryListEl {
-  id: number,
-  name: string
+  id: number;
+  name: string;
 }
 
 function SearchHistory () {

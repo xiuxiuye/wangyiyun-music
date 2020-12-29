@@ -4,10 +4,13 @@
   height: $height;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  border-bottom: 4px solid;
   &-logo {
     width: $width;
     max-width: $maxWidth;
     padding: 0 $spacing * 16;
+    box-sizing: border-box;
     &-icon {
       font-size: $font-size-5;
       background-color: white;

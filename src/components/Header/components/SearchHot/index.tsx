@@ -3,11 +3,11 @@ import { HeaderContext } from '../../index'
 import './index.scss'
 
 interface HotListEl {
-  id: number,
-  title: string,
-  subTitle: string,
-  hot: number,
-  type: number // 0：普通，1：hot，2：new
+  id: number;
+  title: string;
+  subTitle: string;
+  hot: number;
+  type: number; // 0：普通，1：hot，2：new
 }
 
 function SearchHistory () {

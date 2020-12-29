@@ -1,0 +1,22 @@
+@import '../../../../style/var.scss';
+
+.wyy-recommend-discover-music-personal {
+  padding: $spacing * 16 0;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border-light-color;
+    height: 48px;
+    span:first-of-type {
+      font-size: 22px;
+    }
+  }
+
+  &-title-dark {
+    border-bottom-color: $secondary-text-dark-color;
+    span {
+      color: $title-dark-color;
+    }
+  }
+}

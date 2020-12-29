@@ -1,5 +1,6 @@
 /* 头部、底部播放栏高度 */
 $height: 72px;
+$page-height: calc(100vh - 144px);
 
 /* 字体颜色 */
 /* 浅色背景 */
@@ -41,7 +42,7 @@ $blue-color: rgba(0, 160, 231, 1);
 $spacing: 2px;
 
 /* 左侧栏占据的宽度 */
-$width: 240px;
+$width: 20%;
 $maxWidth: 400px;
 
 /* 圆角 */

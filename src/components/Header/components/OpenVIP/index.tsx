@@ -4,7 +4,7 @@ import VIPPayQRCOde from '../../../../assets/vip-pay-qrcode.png'
 import './index.scss'
 
 interface OpenVIPProps {
-  onClose: Function
+  onClose: Function;
 }
 
 export default function OpenVIP ({ onClose }: OpenVIPProps) {

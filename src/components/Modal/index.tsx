@@ -3,8 +3,8 @@ import util from '../../libs/util'
 import './index.scss'
 
 interface ModalProps {
-  value: boolean,
-  children: any
+  value: boolean;
+  children: any;
 }
 
 export default function Modal ({ value, children }: ModalProps) {

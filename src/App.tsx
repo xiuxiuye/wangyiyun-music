@@ -3,13 +3,16 @@ import RouterView from './router/index'
 import Header from './components/Header/index'
 import Player from './components/Player/index'
 import Provider from './store/provider'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <Provider>
       <div className="wyy-app">
         <Header />
-        <RouterView />
+        <BrowserRouter>
+          <RouterView />
+        </BrowserRouter>
         <Player />
       </div>
     </Provider>

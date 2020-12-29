@@ -1,24 +1,38 @@
 import Home from '../pages/Home/index'
-import MusicSheet from '../pages/MusicSheet/index'
+import DiscoverMusic from '../pages/Home/DiscoverMusic/index'
+import PersonalRecommend from '../pages/Home/DiscoverMusic/PersonalRecommend/index'
+import MusicSheet from '../pages/Home/MusicSheet/index'
 
-interface Routes {
-  path: string,
-  component?: any,
-  redirect?: string | Object
-  children?: Array<object>
+export interface RouteObject {
+  path: string;
+  component?: any;
+  redirect?: string | Object;
+  children?: Array<object>;
+  exact?: boolean;
 }
 
-const routes: Array<Routes> = [
+const routes: Array<RouteObject> = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/recommend/discover/personal',
+    exact: true
   },
   {
-    path: '/home',
+    path: '/',
     component: Home,
     children: [
       {
-        path: '/home/musicsheet',
+        path: '/recommend/discover',
+        component: DiscoverMusic,
+        children: [
+          {
+            path: '/recommend/discover/personal',
+            component: PersonalRecommend
+          }
+        ]
+      },
+      {
+        path: '/musicsheet/:id',
         component: MusicSheet
       }
     ]

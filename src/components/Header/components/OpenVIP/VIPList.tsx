@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
 interface VIPListProps {
-  type: number,
-  onChange: Function
+  type: number;
+  onChange: Function;
 }
 
 export default function VIPList ({ type, onChange }: VIPListProps) {
